@@ -1,0 +1,29 @@
+.column-25 {
+  float: left;
+  width: 20%;
+  height: 100%;
+  padding: 4px;
+}
+
+/*make only displayed column when on smaller screens*/
+.column-50 {
+  float: left;
+  width: 60%;
+  height: 100%;
+  padding: 4px;
+}
+
+.main-content {
+  width: 75%;
+  height: 100%;
+  margin: auto; /* 0 auto;
+  /*background-color: lightslategrey*/
+}
+
+/* full-sized  container that fills up the page */
+.row {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

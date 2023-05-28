@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="no-js" lang="" style="scroll-behavior: smooth">
+
+<head>
+  <meta charset="utf-8">
+  <title>Johnathyn Strong</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!--STYLESHEETS-->
+  <!--  <link rel="stylesheet" href="css/normalize.css">-->
+  <!--  <link rel="stylesheet" href="css/main.css">-->
+  <link rel="stylesheet" href="../css/timeline.css">
+  <link rel="stylesheet" href="../css/topbar.css">
+  <link rel="stylesheet" href="../css/flipcard.css">
+  <link rel="stylesheet" href="../css/responsive_grid.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="../css/content_block.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="../js/main.js"></script>
+
+  <style>
+    #myImg1,
+    #myImg2,
+    #myImg3{
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #myImg1:hover,
+    #myImg2:hover,
+    #myImg3:hover
+    {opacity: 0.7;}
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 1100px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content, #caption {
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+      from {transform: scale(0.1)}
+      to {transform: scale(1)}
+    }
+
+    /* The Close Button */
+    /*.close {*/
+    /*  position: absolute;*/
+    /*  top: 15px;*/
+    /*  right: 35px;*/
+    /*  color: #f1f1f1;*/
+    /*  font-size: 40px;*/
+    /*  font-weight: bold;*/
+    /*  transition: 0.3s;*/
+    /*}*/
+
+    /*.close:hover,*/
+    /*.close:focus {*/
+    /*  color: #bbb;*/
+    /*  text-decoration: none;*/
+    /*  cursor: pointer;*/
+    /*}*/
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+      .modal-content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!--  &lt;!&ndash; Add your site or application content here &ndash;&gt;-->
+<!--  <p>Hello world! This is HTML5 Boilerplate.</p>-->
+<!--  <script src="js/vendor/modernizr-3.11.2.min.js"></script>-->
+<!--  <script src="js/plugins.js"></script>-->
+<!--  <script src="js/main.js"></script>-->
+
+<!--  &lt;!&ndash; Google Analytics: change UA-XXXXX-Y to be your site's ID. &ndash;&gt;-->
+<!--  <script>-->
+<!--    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
+<!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')-->
+<!--  </script>-->
+<!--  <script src="https://www.google-analytics.com/analytics.js" async></script>-->
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="../resume/Johnathyn_Strong_Resume.pdf" class="active">Resume</a>
+  <a href="../index.html">Home</a> <!-- TODO maybe remove this header tab -->
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!--  <div class="main-content">-->
+
+<div style="padding: 150px"></div>
+
+<!--INTRODUCTION-->
+<div style="max-width: 600px; margin: 0 auto">
+  <h1 style="margin: 2px">Graph-based Blockchain Visualization</h1>
+  <h3 style="margin: 2px">Fall 2022 - Spring 2023</h3>
+  <h2 style="margin: 2px"><a href="https://github.com/sharzy720/capstone22_23">GitHub</a></h2>
+<!--  <p style="margin: 2px">The Elliptic dataset is a large collection of blockchain activity represented as a graph. This capstone will include three integrated components for storing, analyzing, and exploring this dataset. The first component is a back end consisting of a graph database for storing the dataset. The second component is a front-end consisting of a graph visualization, interactions to explore the graph and applied algorithms (see the third component), and an interface for managing the dataset. The third component is the application of one or more graph-based machine learning algorithms. Some graph learning algorithms may be available in the graph database, but some may be in other libraries (Graph Nets, Deep Graph Library, PyTorch, etc.) or be required to be implemented by the student.-->
+<!--  </p>-->
+<!--  <p style="margin: 2px">-->
+<!--    This project intends to take the Elliptic dataset and graph small subsets on a full-stack web application. The Elliptic dataset is a large collection of Bitcoin transactions that occurred over a period of 50 time sets. There are two parts to this project the front end and the back end. The front end was created using React JS for the layout and D3.js for the graph visualization. As for the backend Neo4j was used to hold all the user ids and their respective transaction links. The GitHub link is currently private due to it being an ongoing school project, but email me if you would like to look at it and I will be happy to give you access.-->
+<!--  </p>-->
+  <p style="margin: 2px">
+    This project takes the Elliptic dataset and graphs smaller subsets in a full-stack web application. The Elliptic dataset is a large collection of over 200,000 Bitcoin transactions that occurred over a period of 50 time steps. The front end was created using React JS as the framework, D3.js for the graph visualization and Material UI for the UI components. The backend consists of a Neo4j graph database as well as an API made using node.js and Express.js. The GitHub link is currently private due to it being an ongoing school project, but if interested, reach out and I will be glad to send a copy of the code or give limited access to the GitHub repository.
+  </p>
+</div>
+
+<div style="padding: 150px"></div>
+
+<div style="padding: 50px"></div>
+
+
+<!--PROJECTS-->
+<div id="projects" style="background-color: rebeccapurple;">
+
+  <div style="padding: 25px"></div>
+
+  <div class="main-content">
+
+<!--    <div style="margin: 0 auto;">-->
+      <h1 style="text-align: center;">Screenshots</h1>
+<!--    </div>-->
+
+    <div class="grid">
+
+      <div class="flip-card">
+        <img id="myImg1" src="../img/Capstone_no_graphs.png" alt="No Graphs Displayed" style=" height: 100%; width: 100%; border: 1px solid black; ">
+      </div>
+
+      <div class="flip-card">
+        <img id="myImg2" src="../img/Capstone_side_menu.png" alt="Side Menu" style=" height: 100%; width: 100%; border: 1px solid black; ">
+      </div>
+
+      <div class="flip-card">
+        <img id="myImg3" src="../img/Capstone_4_graphs.png" alt="All Four graphs Displayed" style=" height: 100%; width: 100%; border: 1px solid black; ">
+      </div>
+
+    </div>
+  </div>
+
+  <div style="padding: 25px"></div>
+
+<!-- Make Images Pop Out -->
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+<!--    <span class="close">&times;</span>-->
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <script>
+    // Get the modal
+    const modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    const img1 = document.getElementById('myImg1');
+    const img2 = document.getElementById('myImg2');
+    const img3 = document.getElementById('myImg3');
+    const modalImg = document.getElementById("img01");
+    const captionText = document.getElementById("caption");
+
+    img1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    img2.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    img3.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    // const span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    modal.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
+
+</div>
+
+<div style="padding: 50px"></div>
+
+
+<!--CONTACT INFO-->
+<div id="contact">
+
+  <div style="padding: 25px"></div>
+
+  <div class="main-content">
+    <h1 style="text-align: center">Contact Info</h1>
+
+    <div class="card">
+      <img src="../img/johnathyn_pic1.png" alt="John" style="width:100%">
+      <h1>Johnathyn Strong</h1>
+      <p class="card_title">johnathynstrong@gmail.com</p>
+      <!--        <p></p>-->
+      <!--        <a href="#"><i class="fa fa-github card_link"></i></a>-->
+      <a href="https://twitter.com/sharzy720"><i class="fa fa-twitter-square card_link"></i></a>
+      <a href="https://www.linkedin.com/in/johnathynstrong/"><i class="fa fa-linkedin-square card_link"></i></a>
+      <a href="https://github.com/sharzy720"><i class="fa fa-github-square card_link"></i></a>
+      <!--        <p><button class="card_button">Contact</button></p>-->
+      <a class="mailtoui" href="mailto:johnathynstrong@gmail.com"><button class="card_button">Contact</button></a>
+    </div>
+  </div>
+
+  <div style="padding: 25px"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+</body>
+
+</html>

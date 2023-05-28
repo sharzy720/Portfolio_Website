@@ -1,0 +1,17 @@
+/* Default styling for responsive grid, displays 1 item per row */
+.grid {
+  max-width: 1200px;
+  margin: auto; /* 0 auto */
+  display: grid;
+  gap: 1rem;
+}
+
+/* When the display is larger then 600px responsive grid displays 2 items per row */
+@media (min-width: 600px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* When the display is larger than 900px responsive grid displays 3 items per row */
+@media (min-width: 900px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
